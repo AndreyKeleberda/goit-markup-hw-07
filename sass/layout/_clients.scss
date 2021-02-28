@@ -32,30 +32,29 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .client-icon,
+  &:focus .client-icon {
+    fill: var(--accent-color);
+
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .client-icon {
   fill: #afb1b8;
-
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  fill: var(--accent-color);
 
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -6,6 +6,10 @@ footer {
   padding-bottom: 60px;
   margin-bottom: 0;
   background-color: var(--bg-color);
+
+  & img {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-block {
@@ -20,9 +24,6 @@ footer {
   margin-bottom: 20px;
 }
 
-footer img {
-  margin-bottom: 20px;
-}
 .address {
   margin-top: 0;
   margin-bottom: 0;
@@ -63,37 +64,33 @@ footer img {
   flex-direction: column;
   margin-left: 70px;
   margin-top: 12px;
-}
 
-.soc-block ul {
-  display: flex;
-}
+  & ul {
+    display: flex;
+  }
 
-.soc-block h3 {
-  display: block;
+  & h3 {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  & a {
+    background-color: #ffffff1a;
+  }
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
-  text-transform: uppercase;
-
-  color: #ffffff;
-
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.soc-block a {
-  background-color: #ffffff1a;
+  & .soc-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .icon-footer {
   fill: var(--primary-bg-color);
-}
-
-.soc-block .soc-item:not(:last-child) {
-  margin-right: 10px;
 }

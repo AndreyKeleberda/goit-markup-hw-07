@@ -3,14 +3,20 @@
 .work-flex {
   display: flex;
   padding-left: 0;
-}
 
-.work-flex .item {
-  justify-content: space-between;
-}
+  & .item {
+    justify-content: space-between;
+  }
 
-.work-flex .item + .item {
-  margin-left: 30px;
+  & .item + .item {
+    margin-left: 30px;
+  }
+
+  & img {
+    display: block;
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .desctop-app,
@@ -60,9 +66,4 @@
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-}
-.work-flex img {
-  display: block;
-  width: 370px;
-  height: 294px;
 }

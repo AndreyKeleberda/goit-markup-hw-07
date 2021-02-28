@@ -39,10 +39,9 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-}
-
-.button-modal:hover .icon-modal {
-  fill: var(--accent-color);
+  &:hover .icon-modal {
+    fill: var(--accent-color);
+  }
 }
 
 .icon-modal {
@@ -101,6 +100,13 @@ textarea {
 .modal-field {
   position: relative;
   margin-bottom: 10px;
+  & .icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 11px;
+    left: 12px;
+  }
 }
 
 .modal-label {
@@ -113,19 +119,14 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.modal-field .icon {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  bottom: 11px;
-  left: 12px;
-}
-
 .check-input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-color: transparent;
+  &:checked + .check-box {
+    background-image: url(/images/icon-check.svg);
+  }
 }
 
 .modal-checkbox {
@@ -140,11 +141,10 @@ textarea {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-
-.modal-checkbox a {
-  color: var(--accent-color);
-  text-decoration: underline;
+  & a {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
 }
 
 .check-box {
@@ -155,10 +155,6 @@ textarea {
   top: 4px;
   background-image: url(/images/checkbox.svg);
   background-size: cover;
-}
-
-.check-input:checked + .check-box {
-  background-image: url(/images/icon-check.svg);
 }
 
 textarea:focus,
